@@ -12,7 +12,7 @@ const Header = () => {
 
         {/* ------ */}
       </div>
-
+    
       <div className="header_nav">
         <div className="header_option">
           <span className="header_optionLineOne">Hello user</span>
