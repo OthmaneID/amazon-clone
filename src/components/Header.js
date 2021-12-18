@@ -64,11 +64,12 @@ const Header = () => {
 
           </div>
         </Link>
-
-        <div className="header_option">
-          <span className="header_optionLineOne">Returns</span>
-          <span className="header_optionLineTwo">& Orders</span>
-        </div>
+        <Link to={user && '/orders'} style={{ textDecoration: 'none' }}>
+          <div className="header_option">
+            <span className="header_optionLineOne">Returns</span>
+            <span className="header_optionLineTwo">& Orders</span>
+          </div>
+        </Link>
 
         <div className="header_option">
           <span className="header_optionLineOne">Your</span>
