@@ -6,8 +6,8 @@ import SmoothList from "react-smooth-list";
 import { Link, useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
-import { constants } from "buffer";
 import axios from "../axios";
+import { db } from "../firebase";
 
 const Payment = () => {
   const stripe = useStripe();
@@ -35,8 +35,7 @@ const Payment = () => {
 
     getClientSecret();
   }, [basket]);
-
-
+  console.log("SECRET IS ->", clientSecret);
 
   // if the basket is empty rederect the client to checkout page
   useEffect(() => {
@@ -45,7 +44,6 @@ const Payment = () => {
     }
   }, []);
 
-  
   const handleSubmit = async (e) => {
     // do all the stripe stuff...
     e.preventDefault();
@@ -59,9 +57,20 @@ const Payment = () => {
       })
       .then(({ paymentIntent }) => {
         // paymentIntent = payment confirmation
+        
+        db.collection("users").doc(user?.uid).collection("orders").doc(paymentIntent.id).set({
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created,
+        });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
+        dispatch({
+          type: "EMPTY_BASKET",
+        });
 
         navigate("/orders", { replace: true });
       });
