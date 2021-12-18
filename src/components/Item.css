@@ -1,0 +1,60 @@
+.item {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 0.7px solid;
+  padding: 10px;
+}
+.Item__img {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+}
+
+.Item__info {
+  padding-left: 20px;
+}
+
+.Item__title {
+  font-size: 15px;
+  font-weight: 800;
+}
+.star {
+  color: rgb(255, 187, 0);
+  margin-bottom: 5px;
+}
+.Item__info > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}
+
+.Item__counter {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.Item__counterLabel {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 2px;
+  border: 1px solid black;
+  min-width: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.Item__counterIncrease {
+  cursor: pointer;
+}
+
+.Item__counterDecrease {
+  cursor: pointer;
+}
