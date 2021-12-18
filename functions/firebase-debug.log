@@ -1,0 +1,39 @@
+[debug] [2021-12-18T14:16:21.102Z] ----------------------------------------------------------------------
+[debug] [2021-12-18T14:16:21.105Z] Command:       C:\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-12-18T14:16:21.105Z] CLI Version:   10.0.0
+[debug] [2021-12-18T14:16:21.106Z] Platform:      win32
+[debug] [2021-12-18T14:16:21.106Z] Node Version:  v16.13.1
+[debug] [2021-12-18T14:16:21.108Z] Time:          Sat Dec 18 2021 15:16:21 GMT+0100 (GMT+01:00)
+[debug] [2021-12-18T14:16:21.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-18T14:16:21.179Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-18T14:16:21.179Z] > authorizing via signed-in user (othmanid5@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2021-12-18T14:16:21.232Z] [hub] writing locator at C:\Users\DELL\AppData\Local\Temp\hub-clone-2a083.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2021-12-18T14:16:21.291Z] defaultcredentials: writing to file C:\Users\DELL\AppData\Roaming\firebase\othmanid5_gmail_com_application_default_credentials.json
+[debug] [2021-12-18T14:16:21.295Z] Setting GAC to C:\Users\DELL\AppData\Roaming\firebase\othmanid5_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\DELL\\AppData\\Roaming\\firebase\\othmanid5_gmail_com_application_default_credentials.json"}}
+[debug] [2021-12-18T14:16:21.299Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/adminSdkConfig [none]
+[debug] [2021-12-18T14:16:21.709Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/adminSdkConfig 200
+[debug] [2021-12-18T14:16:21.710Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/adminSdkConfig {"projectId":"clone-2a083","storageBucket":"clone-2a083.appspot.com"}
+[debug] [2021-12-18T14:16:21.860Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2a083/sites 
+[debug] [2021-12-18T14:16:22.775Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2a083/sites 200
+[debug] [2021-12-18T14:16:22.776Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2a083/sites {"sites":[{"name":"projects/724200234901/sites/clone-2a083","defaultUrl":"https://clone-2a083.web.app","appId":"1:724200234901:web:ce9d6e8818dbe0a5a0609c","type":"DEFAULT_SITE"}]}
+[debug] [2021-12-18T14:16:22.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/webApps/1:724200234901:web:ce9d6e8818dbe0a5a0609c/config [none]
+[debug] [2021-12-18T14:16:23.715Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/webApps/1:724200234901:web:ce9d6e8818dbe0a5a0609c/config 200
+[debug] [2021-12-18T14:16:23.715Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2a083/webApps/1:724200234901:web:ce9d6e8818dbe0a5a0609c/config {"projectId":"clone-2a083","appId":"1:724200234901:web:ce9d6e8818dbe0a5a0609c","storageBucket":"clone-2a083.appspot.com","apiKey":"AIzaSyCqjUK7gnUe82agXIaMXz6avMPp7aDqi3o","authDomain":"clone-2a083.firebaseapp.com","messagingSenderId":"724200234901","measurementId":"G-9SG8ZSJTH8"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-12-18T14:16:23.781Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-12-18T14:16:23.781Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-12-18T14:16:23.782Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\DELL\\.cache\\firebase\\emulators\\ui-v1.6.4\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\DELL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.4\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-12-18T14:16:23.928Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "E:\USERS\DELL\amazon-clone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\USERS\\DELL\\amazon-clone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2021-12-18T14:16:24.076Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-12-18T14:16:24.076Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-12-18T14:16:24.077Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-12-18T14:16:24.077Z] [worker-~diagnostic~-2fe250de-45cc-429b-b62d-36751a0d38a8]: Assigning socketPath: \\?\pipe\E:\USERS\DELL\amazon-clone\amazon-clone\functions\1020 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-2fe250de-45cc-429b-b62d-36751a0d38a8]: Assigning socketPath: \\\\?\\pipe\\E:\\USERS\\DELL\\amazon-clone\\amazon-clone\\functions\\1020"}}
+[debug] [2021-12-18T14:16:24.078Z] [worker-~diagnostic~-2fe250de-45cc-429b-b62d-36751a0d38a8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-2fe250de-45cc-429b-b62d-36751a0d38a8]: BUSY"}}
