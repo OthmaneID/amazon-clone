@@ -7,11 +7,11 @@ const stripe = require("stripe")('sk_live_51K2LhkGKPU1RRlqTjW1ZbQCHXoYZKR6jHftTr
 // API
 
 // - App config
-const app = express()
+const app = express();
 
 // - middlewares
 app.use(cors({ origin: true }));
-app.use(express.json())
+app.use(express.json());
 
 
 // - API ROUTES

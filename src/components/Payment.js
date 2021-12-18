@@ -36,6 +36,8 @@ const Payment = () => {
     getClientSecret();
   }, [basket]);
 
+
+
   // if the basket is empty rederect the client to checkout page
   useEffect(() => {
     if (basket.length < 1) {
@@ -43,8 +45,9 @@ const Payment = () => {
     }
   }, []);
 
+  
   const handleSubmit = async (e) => {
-    // do all the stripe stuff
+    // do all the stripe stuff...
     e.preventDefault();
     setProcessing(true);
 
