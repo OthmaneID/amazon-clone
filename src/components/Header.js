@@ -64,7 +64,7 @@ const Header = () => {
 
           </div>
         </Link>
-        <Link to={user && '/orders'} style={{ textDecoration: 'none' }}>
+        <Link to={user ? '/orders' : '/'} style={{ textDecoration: 'none' }}>
           <div className="header_option">
             <span className="header_optionLineOne">Returns</span>
             <span className="header_optionLineTwo">& Orders</span>

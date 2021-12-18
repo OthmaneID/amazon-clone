@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { db } from "../firebase";
 import { useStateValue } from "../StateProvider";
 import Order from "./Order";
@@ -7,6 +8,13 @@ import "./Orders.css";
 const Orders = () => {
   const [{ basket, user }, dispatch] = useStateValue();
   const [orders, setOrders] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/", { replace: true });
+    }
+  }, []);
 
   useEffect(() => {
     if (user) {
@@ -22,20 +30,19 @@ const Orders = () => {
             }))
           )
         );
-    }else{
-        setOrders([])
+    } else {
+      setOrders([]);
     }
   }, [user]);
-
 
   return (
     <div className="orders">
       <h1>Your orders</h1>
-        <div className="orders__order">
-            {orders?.map(order=>(
-                <Order order={order}/>
-            ))}
-        </div>
+      <div className="orders__order">
+        {orders?.map((order) => (
+          <Order order={order} />
+        ))}
+      </div>
     </div>
   );
 };
