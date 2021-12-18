@@ -81,3 +81,24 @@ input {
 .payment__details {
   margin-top: 10px;
 }
+
+.payment__priceContainer > h3 {
+  padding-bottom: 20px;
+}
+.payment__buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment__button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 70%;
+  height: 30px;
+  border: 1px solid;
+  font-weight: bolder;
+  margin-top: 10px;
+  border-color: #8f8f8f #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}

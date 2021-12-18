@@ -146,9 +146,11 @@ const Payment = () => {
 
                 <div className="payment__priceContainer">
                   <CurrencyFormat renderText={(value) => <h3>Order Total : {value} </h3>} decimalScale={2} value={getBasketTotal(basket)} displayType={"text"} thousandSeparator={true} prefix={"$"} />
-                  <button disabled={processing || disabled || succeeded}>
-                    <span>{processing ? <p>Processing...</p> : "Buy Now"}</span>
-                  </button>
+                  <div className="payment__buttonContainer">
+                    <button className="payment__button" disabled={processing || disabled || succeeded}>
+                      <span>{processing ? <p>Processing...</p> : "Buy Now"}</span>
+                    </button>
+                  </div>
                 </div>
                 {/* ERROR */}
                 {error && <div>{error}</div>}
